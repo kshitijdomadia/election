@@ -1,4 +1,4 @@
-pragma solidity 0.6.9;
+pragma solidity ^0.5.16;
 
 contract Election {
     // Model a Candidate
