@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-pragma solidity ^0.5.16;
-=======
 pragma solidity 0.4.25;
->>>>>>> b5d7bbb8f276a01fe35bbba1e25d219c048fda1b
 
 contract Election {
     // Model a Candidate
