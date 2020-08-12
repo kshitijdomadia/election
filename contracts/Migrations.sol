@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 pragma solidity ^0.6.9;
+=======
+pragma solidity ^0.4.25;
+>>>>>>> 2020update
 
 contract Migrations {
   address public owner;
@@ -8,15 +12,19 @@ contract Migrations {
     if (msg.sender == owner) _;
   }
 
+<<<<<<< HEAD
   constructor() public{
+=======
+  constructor () public {
+>>>>>>> 2020update
     owner = msg.sender;
   }
 
-  function setCompleted(uint completed) restricted {
+  function setCompleted(uint completed) public restricted {
     last_completed_migration = completed;
   }
 
-  function upgrade(address new_address) restricted {
+  function upgrade(address new_address) public restricted {
     Migrations upgraded = Migrations(new_address);
     upgraded.setCompleted(last_completed_migration);
   }
